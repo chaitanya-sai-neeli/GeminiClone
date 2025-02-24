@@ -1,3 +1,3 @@
 # React + Vite
 
-Working on building a Gemini clone with prompts answering features..
+Building a Gemini-inspired AI assistant in React with prompt-based response capabilities.

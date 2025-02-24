@@ -30,4 +30,4 @@ async function run(prompt) {
   console.log(result.response.text());
 }
 
-run();
+export default run;

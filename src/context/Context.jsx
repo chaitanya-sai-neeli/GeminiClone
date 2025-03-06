@@ -20,6 +20,7 @@ const ContextProvider = (props) => {
   const newChat = () => {
     setLoading(false);
     setShowResult(false);
+    setInput("");
   };
 
   const onSent = async (prompt) => {

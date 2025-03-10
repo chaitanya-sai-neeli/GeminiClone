@@ -29,19 +29,41 @@ const Main = () => {
               <p>How can I help you today ?</p>
             </div>
             <div className="cards">
-              <div className="card">
+              <div
+                className="card"
+                onClick={() =>
+                  setInput("Suggest some trekking spots in Telangana")
+                }
+              >
                 <p>Suggest some trekking spots in Telangana</p>
                 <img src={assets.compass_icon} alt="compass pic" />
               </div>
-              <div className="card">
+              <div
+                className="card"
+                onClick={() =>
+                  setInput("Briefly summarize this concept: Urban Planning")
+                }
+              >
                 <p>Briefly summarize this concept: Urban Planning</p>
                 <img src={assets.bulb_icon} alt="compass pic" />
               </div>
-              <div className="card">
+              <div
+                className="card"
+                onClick={() =>
+                  setInput(
+                    "Brain storm team bonding activities for our work retreat"
+                  )
+                }
+              >
                 <p>Brain storm team bonding activities for our work retreat</p>
                 <img src={assets.message_icon} alt="compass pic" />
               </div>
-              <div className="card">
+              <div
+                className="card"
+                onClick={() =>
+                  setInput("Improve the readability of the following code")
+                }
+              >
                 <p>Improve the readability of the following code</p>
                 <img src={assets.code_icon} alt="compass pic" />
               </div>
@@ -62,7 +84,14 @@ const Main = () => {
                   <hr />
                 </div>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
+                <p
+                  style={{
+                    backgroundColor: loading ? "" : "#f0f4f9",
+                    padding: loading ? "" : "15px",
+                    borderRadius: loading ? "" : "20px",
+                  }}
+                  dangerouslySetInnerHTML={{ __html: resultData }}
+                ></p>
               )}
             </div>
           </div>

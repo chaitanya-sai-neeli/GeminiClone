@@ -32,10 +32,10 @@ const Main = () => {
               <div
                 className="card"
                 onClick={() =>
-                  setInput("Suggest some trekking spots in Telangana")
+                  setInput("Suggest some tourist spots in Hyderbad")
                 }
               >
-                <p>Suggest some trekking spots in Telangana</p>
+                <p>Suggest some tourist spots in Hyderbad</p>
                 <img src={assets.compass_icon} alt="compass pic" />
               </div>
               <div
